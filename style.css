@@ -121,3 +121,17 @@ input {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: hsl(25, 97%, 53%);
+}
