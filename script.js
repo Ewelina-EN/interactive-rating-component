@@ -4,12 +4,9 @@ const form = document.querySelector(".form");
 
 let ratingValue;
 
-console.log(rateInputs);
-
 rateInputs.forEach((input) => {
   input.addEventListener("change", (e) => {
     ratingValue = e.target.value;
-    console.log(e.target.value);
   });
 });
 
@@ -17,7 +14,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (!ratingValue) return;
   thankYouState(ratingContainer, ratingValue);
-  console.log(thankYouState);
 });
 
 function thankYouState(elements, ratingValue) {
