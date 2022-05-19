@@ -1,5 +1,5 @@
 const ratingContainer = document.querySelector(".container");
-const rateInputs = document.querySelectorAll(".rate_input");
+const rateInputs = document.querySelectorAll(".form_input");
 const form = document.querySelector(".form");
 
 let ratingValue;
@@ -18,14 +18,14 @@ form.addEventListener("submit", (e) => {
 
 function thankYouState(elements, ratingValue) {
   elements.innerHTML = `
-    <div class="thx">
+    <div class="thx_section">
         <img
           src="images/illustration-thank-you.svg"
           alt="thankyou"
           class="thx_img"
         />
         <p class="result">You selected ${ratingValue} out of 5</p>
-        <h1>Thank you!</h1>
+        <h1 class="header">Thank you!</h1>
         <p class="thx_description">
           We appreciate you taking the time to give a rating.<br />If you ever
           need more support, don't hestitate to<br />

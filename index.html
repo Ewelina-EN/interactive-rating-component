@@ -3,88 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Frontend Mentor | Interactive rating component</title>
     <link href="./style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div>
         <img src="images/icon-star.svg" alt="star" class="star" />
-        <h1>How did we do?</h1>
+        <h1 class="header">How did we do?</h1>
         <p class="text_content">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
         <form class="form">
-          <ul class="rate_list">
+          <ul class="form_list">
             <li>
-              <label>
+              <label class="form_label">
                 <input
                   type="radio"
                   name="rank"
                   value="1"
-                  class="rate_input"
+                  class="form_input"
                   id="rate-1"
                 />1
               </label>
             </li>
             <li>
-              <label>
+              <label class="form_label">
                 <input
                   type="radio"
                   name="rank"
                   value="2"
-                  class="rate_input"
+                  class="form_input"
                   id="rate-2"
                 />2
               </label>
             </li>
             <li>
-              <label>
+              <label class="form_label">
                 <input
                   type="radio"
                   name="rank"
                   value="3"
-                  class="rate_input"
+                  class="form_input"
                   id="rate-3"
                 />3
               </label>
             </li>
             <li>
-              <label>
+              <label class="form_label">
                 <input
                   type="radio"
                   name="rank"
                   value="4"
-                  class="rate_input"
+                  class="form_input"
                   id="rate-4"
                 />4
               </label>
             </li>
             <li>
-              <label>
+              <label class="form_label">
                 <input
                   type="radio"
                   name="rank"
                   value="5"
-                  class="rate_input"
+                  class="form_input"
                   id="rate-5"
                 />5
               </label>
             </li>
           </ul>
-          <button class="submit_btn" type="submit">SUBMIT</button>
+          <button class="form_btn" type="submit">SUBMIT</button>
         </form>
       </div>
     </div>
     <footer class="footer">
       Challenge by
-      <a href="https://www.frontendmentor.io/challenges" target="_blank">
+      <a
+        href="https://www.frontendmentor.io/challenges"
+        target="_blank"
+        class="footer_link"
+      >
         Frontend Mentor</a
       >
-      Coded by <a href="https://github.com/Ewelina-EN" target="_blank">EN</a>.
+      Coded by
+      <a
+        href="https://github.com/Ewelina-EN"
+        target="_blank"
+        class="footer_link"
+        >EN</a
+      >.
     </footer>
   </body>
 </html>
