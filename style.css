@@ -31,11 +31,14 @@ body {
   color: hsl(0, 0%, 100%);
   margin: 0;
 }
+
 .star {
   background-color: hsl(213, 19%, 23%);
   padding: 10px;
   border-radius: 100%;
   margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .text_content,
