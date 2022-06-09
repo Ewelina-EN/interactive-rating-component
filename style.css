@@ -1,135 +1,138 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Overpass", sans-serif;
-  background-color: hsl(216, 12%, 8%);
-  flex-direction: column;
-  height: 100vh;
-}
-
-.container {
-  width: 400px;
-  height: auto;
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 25px;
-  padding: 20px 25px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.header {
-  color: hsl(0, 0%, 100%);
-  margin: 0;
-}
-
-.star {
-  background-color: hsl(213, 19%, 23%);
-  padding: 10px;
-  border-radius: 100%;
-  margin-bottom: 20px;
-  width: 40px;
-  height: 40px;
-}
-
-.text_content,
-.thx_description {
-  color: hsl(216, 12%, 54%);
-  font-size: 15px;
-  line-height: 1.6em;
-  margin-bottom: 15px;
-}
-
-.form_list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  color: hsl(216, 12%, 54%);
-  margin-top: 50px;
-  padding: 0;
-}
-.form_label {
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  background-color: hsl(213, 19%, 23%);
-  padding: 20px 25px;
-  text-align: center;
-  border-radius: 100%;
-  transition: 0.5s;
-}
-
-.form_label:hover {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.form_label:active {
-  background-color: hsl(217, 12%, 63%);
-  color: hsl(0, 0%, 100%);
-}
-
-.form_input {
-  display: none;
-}
-
-.form_btn {
-  width: 100%;
-  margin-top: 40px;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-  border: 1px solid hsl(216, 12%, 8%);
-  border-radius: 40px;
-  border: none;
-  padding: 15px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  transition: 0.5s;
-}
-.form_btn:hover {
-  color: hsl(25, 97%, 53%);
-  background-color: hsl(0, 0%, 100%);
-}
-
-.thx_section {
-  text-align: center;
-}
-
-.thx_img {
-  display: block;
-  margin: 30px auto 20px auto;
-}
-
-.result {
-  display: inline-block;
-  background-color: hsl(213, 19%, 23%);
-  border-radius: 20px;
-  color: hsl(25, 97%, 53%);
-  padding: 10px 15px;
-  font-weight: 400;
-}
-
-.footer {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: hsl(217, 12%, 63%);
-  text-decoration: none;
-}
-
-.footer_link {
-  text-decoration: none;
-  color: hsl(25, 97%, 53%);
-}
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+     ::after,
+     ::before {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Overpass", sans-serif;
+        background-color: hsl(216, 12%, 8%);
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 400px;
+        height: auto;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 25px;
+        padding: 20px 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .header {
+        color: hsl(0, 0%, 100%);
+        margin: 0;
+    }
+    
+    .star {
+        background-color: hsl(213, 19%, 23%);
+        padding: 10px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .text_content,
+    .thx_description {
+        color: hsl(216, 12%, 54%);
+        font-size: 15px;
+        line-height: 1.6em;
+        margin-bottom: 15px;
+    }
+    
+    .form_list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        color: hsl(216, 12%, 54%);
+        margin-top: 50px;
+        padding: 0;
+    }
+    
+    .form_label {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        background-color: hsl(213, 19%, 23%);
+        padding: 20px 25px;
+        text-align: center;
+        border-radius: 100%;
+        transition: 0.5s;
+    }
+    
+    .form_label:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .form_label:active,
+    .form_label.active {
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .form_input {
+        display: none;
+    }
+    
+    .form_btn {
+        width: 100%;
+        margin-top: 40px;
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(216, 12%, 8%);
+        border-radius: 40px;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+    
+    .form_btn:hover {
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+    .thx_section {
+        text-align: center;
+    }
+    
+    .thx_img {
+        display: block;
+        margin: 30px auto 20px auto;
+    }
+    
+    .result {
+        display: inline-block;
+        background-color: hsl(213, 19%, 23%);
+        border-radius: 20px;
+        color: hsl(25, 97%, 53%);
+        padding: 10px 15px;
+        font-weight: 400;
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: hsl(217, 12%, 63%);
+        text-decoration: none;
+    }
+    
+    .footer_link {
+        text-decoration: none;
+        color: hsl(25, 97%, 53%);
+    }
