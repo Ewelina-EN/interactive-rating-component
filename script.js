@@ -5,19 +5,19 @@ const form = document.querySelector(".form");
 let ratingValue;
 
 rateInputs.forEach((input) => {
-  input.addEventListener("change", (e) => {
-    ratingValue = e.target.value;
-  });
+    input.addEventListener("change", (e) => {
+        ratingValue = e.target.value;
+    });
 });
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (!ratingValue) return;
-  thankYouState(ratingContainer, ratingValue);
+    e.preventDefault();
+    if (!ratingValue) return;
+    thankYouState(ratingContainer, ratingValue);
 });
 
 function thankYouState(elements, ratingValue) {
-  elements.innerHTML = `
+    elements.innerHTML = `
     <div class="thx_section">
         <img
           src="images/illustration-thank-you.svg"
