@@ -10,6 +10,15 @@ rateInputs.forEach((input) => {
     });
 });
 
+window.selected = function(event) {
+    document.querySelectorAll('.form_list .form_label.active').forEach(function(item) {
+      if (!item.isSameNode(event.parentNode)){
+        item.classList.remove("active");
+      }
+    })
+    event.target.parentNode.classList.add("active");
+}
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!ratingValue) return;
